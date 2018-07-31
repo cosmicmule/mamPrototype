@@ -1,0 +1,159 @@
+/* PROPERTIES */
+/*---------------------------------------------*/
+@black: #000;
+@white: #fff;
+@lightGrey: #ccc;
+@lightBlue: #488aa0;
+@lightPink: rgba(196,140,167,1);
+/*---------------------------------------------*/
+
+/* DEFAULTS */
+/*---------------------------------------------*/
+body, html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Loved by the King', cursive;
+	font-family: 'Indie Flower', cursive;
+	background: black;
+}
+
+//*{border: 1px solid green;}
+
+#content-wrapper,
+#section-wrapper,
+#scrollContent{
+	width:100%;
+	min-height: 100%;
+}
+
+#scrollContent{
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+	
+
+	#gradients{
+		border: 1px solid blue;
+		position: absolute;
+		top:0;
+		min-height: 100%;
+		width:99.9%;
+	}
+	#content{
+		position: absolute;
+		top:0;
+		// container dimensions
+			width:99.9%;
+			height: 16000px;
+		// background gradient
+			background: #c48ca7; /* Old browsers */
+			background: -moz-linear-gradient(top, #c48ca7 0%, #ddb1c3 19%, #ddb1c3 19%, #aab3cb 49%, #afdeed 57%, #57b1cd 69%, #a6d7ea 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #c48ca7 0%,#ddb1c3 19%,#ddb1c3 19%,#aab3cb 49%,#afdeed 57%,#57b1cd 69%,#a6d7ea 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #c48ca7 0%,#ddb1c3 19%,#ddb1c3 19%,#aab3cb 49%,#afdeed 57%,#57b1cd 69%,#a6d7ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c48ca7', endColorstr='#a6d7ea',GradientType=0 ); /* IE6-9 */
+	
+			#section_intro{
+				border: 1px solid red;
+				// container dimensions
+				width: 100%;
+				height: 100vh;
+			}
+
+			#section_intro{
+				
+
+			}
+
+			#section_intro{
+				
+
+			}
+	}
+
+
+
+
+}
+
+
+
+/* HELPER STYLES */
+//------------------------------------------
+//------------------------------------------
+//------------------------------------------
+
+// flex alignments--------------------------
+// height ----------------------------------
+.Aligner {
+	display: flex;
+  }
+
+  .Aligner-item--top{
+	align-items: center;
+	justify-content: start
+  }
+
+  .Aligner-item--center{
+	align-items: center;
+	justify-content: center;
+  }
+
+  .Aligner-item--bottom{
+	align-items: center;
+	justify-content: end
+  }
+  
+  .Aligner-item {
+	max-width: 100%;
+  }
+
+  .Aligner-container--row{
+	  flex-direction: row
+  }
+
+  .Aligner-container--column{
+	flex-direction: column
+}
+  
+  .Aligner-item--top {
+	align-self: flex-start;
+  }
+  
+  .Aligner-item--bottom {
+	align-self: flex-end;
+  }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/*
+    @media only screen and (max-width:450px) {}
+    @media only screen and (max-width: 768px) {}
+    @media only screen and (max-width: 1140px) {}
+*/
+
+
+@media only screen and (max-width:450px) {
+	#scrollSvg-label{
+		font-size: 10px !important;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	#copy{
+		width:80% !important;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#gallery{width: 80% !important}
+	.column {
+	  flex: 100% !important;
+	  max-width: 100% !important;
+	}
+  }
+
+

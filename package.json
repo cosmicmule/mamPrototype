@@ -1,0 +1,26 @@
+{
+  "name": "html5-ad",
+  "private": true,
+  "description": "HTML5 ad.",
+  "devDependencies": {
+    "btoa": "~1.1.1",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compress": "^1.4.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-htmlmin": "^2.3.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "~1.4.1",
+    "grunt-contrib-uglify": "^3.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-image-embed": "^0.3.3",
+    "grunt-newer": "^1.2.0",
+    "grunt-processhtml": "^0.4.1",
+    "jit-grunt": "^0.10.0",
+    "time-grunt": "^1.4.0"
+  }
+}

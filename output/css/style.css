@@ -1,0 +1,133 @@
+/* PROPERTIES */
+/*---------------------------------------------*/
+/*---------------------------------------------*/
+/* DEFAULTS */
+/*---------------------------------------------*/
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Loved by the King', cursive;
+  font-family: 'Indie Flower', cursive;
+  background: black;
+}
+#content-wrapper,
+#section-wrapper,
+#scrollContent {
+  width: 100%;
+  min-height: 100%;
+}
+#scrollContent {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+#scrollContent #gradients {
+  border: 1px solid blue;
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  width: 99.9%;
+}
+#scrollContent #content {
+  position: absolute;
+  top: 0;
+  width: 99.9%;
+  height: 16000px;
+  background: #c48ca7;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c48ca7 0%, #ddb1c3 19%, #ddb1c3 19%, #aab3cb 49%, #afdeed 57%, #57b1cd 69%, #a6d7ea 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c48ca7', endColorstr='#a6d7ea', GradientType=0);
+  /* IE6-9 */
+}
+#scrollContent #content #section_intro {
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+}
+/* HELPER STYLES */
+.Aligner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Aligner-item--top {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.Aligner-item--center {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Aligner-item--bottom {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.Aligner-item {
+  max-width: 100%;
+}
+.Aligner-container--row {
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.Aligner-container--column {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Aligner-item--top {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+.Aligner-item--bottom {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/*
+    @media only screen and (max-width:450px) {}
+    @media only screen and (max-width: 768px) {}
+    @media only screen and (max-width: 1140px) {}
+*/
+@media only screen and (max-width: 450px) {
+  #scrollSvg-label {
+    font-size: 10px !important;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  #copy {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #gallery {
+    width: 80% !important;
+  }
+  .column {
+    -webkit-flex: 100% !important;
+        -ms-flex: 100% !important;
+            flex: 100% !important;
+    max-width: 100% !important;
+  }
+}
