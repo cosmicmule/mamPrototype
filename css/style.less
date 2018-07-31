@@ -30,44 +30,81 @@ body, html {
 #scrollContent{
 	width: 100%;
 	height: 100%;
-	border: 1px solid red;
 	
 
-	#gradients{
-		border: 1px solid blue;
-		position: absolute;
-		top:0;
-		min-height: 100%;
-		width:99.9%;
-	}
 	#content{
 		position: absolute;
 		top:0;
 		// container dimensions
-			width:99.9%;
-			height: 16000px;
+			width:100%;
+			//height: 16000px;
 		// background gradient
 			background: #c48ca7; /* Old browsers */
 			background: -moz-linear-gradient(top, #c48ca7 0%, #ddb1c3 19%, #ddb1c3 19%, #aab3cb 49%, #afdeed 57%, #57b1cd 69%, #a6d7ea 100%); /* FF3.6-15 */
 			background: -webkit-linear-gradient(top, #c48ca7 0%,#ddb1c3 19%,#ddb1c3 19%,#aab3cb 49%,#afdeed 57%,#57b1cd 69%,#a6d7ea 100%); /* Chrome10-25,Safari5.1-6 */
 			background: linear-gradient(to bottom, #c48ca7 0%,#ddb1c3 19%,#ddb1c3 19%,#aab3cb 49%,#afdeed 57%,#57b1cd 69%,#a6d7ea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c48ca7', endColorstr='#a6d7ea',GradientType=0 ); /* IE6-9 */
-	
+			overflow: hidden;
+			
 			#section_intro{
 				border: 1px solid red;
 				// container dimensions
-				width: 100%;
 				height: 100vh;
+				width: 100%;
+
+				/* logo */
+				#logo{
+					margin-top:2%;
+					border: 1px solid red;
+				
+					#logosvg{
+						display:block;
+						margin: auto auto 0;
+						width: 350px;
+			
+						#california{fill: @white}
+						#mammothLakes{fill: @white}
+						#outerMtn{fill: @lightBlue}
+						#innerMtn{fill: @white}
+					}
+				}
+				/* SCROLL ICON BLOCK */
+				#scrollerIcon{
+					margin-bottom:60px;
+
+					#scrollSvg{
+						display:block;
+						height: 40px;
+						margin: auto auto 0;
+						width: 40px;
+					}
+
+					#scrollSvg-label{
+						color: @white;
+						display:block;
+						font-size: 14px;
+						font-weight: 400;
+						letter-spacing: 2px;
+						margin:15px 10px 10px 10px;
+						padding:0;
+						text-transform: uppercase;
+						text-shadow: 1px 1px 1px #626161;
+					}
+				}
+
 			}
 
-			#section_intro{
-				
+			#section_noSmallAdventure{
+				border: 1px solid red;
+				// container dimensions
+				height: 100vh;
 
 			}
 
-			#section_intro{
-				
-
+			#section_forEverySeason{
+				border: 1px solid red;
+				// container dimensions
+				height: 100vh;
 			}
 	}
 
@@ -89,38 +126,53 @@ body, html {
 	display: flex;
   }
 
-  .Aligner-item--top{
-	align-items: center;
-	justify-content: start
+  .Aligner-item-top{
+	align-items: flex-start;
+	justify-content: center
   }
 
-  .Aligner-item--center{
+  .Aligner-item-center-center{
 	align-items: center;
 	justify-content: center;
-  }
+	}
 
-  .Aligner-item--bottom{
+	.Aligner-item-center-top{
+		align-items: center;
+		justify-content: top;
+	}
+
+	.Aligner-item-center-bottom{
+		align-items: center;
+		justify-content: flex-end ;
+	}
+	
+	.Aligner-item-center{
+		align-items: center;
+		justify-content: center;
+		}
+
+  .Aligner-item-bottom{
 	align-items: center;
 	justify-content: end
   }
   
   .Aligner-item {
-	max-width: 100%;
+		max-width: 100%;
   }
 
-  .Aligner-container--row{
+  .Aligner-container-row{
 	  flex-direction: row
   }
 
-  .Aligner-container--column{
+  .Aligner-container-column{
 	flex-direction: column
 }
   
-  .Aligner-item--top {
+  .Aligner-item-top {
 	align-self: flex-start;
   }
   
-  .Aligner-item--bottom {
+  .Aligner-item-bottom {
 	align-self: flex-end;
   }
 
